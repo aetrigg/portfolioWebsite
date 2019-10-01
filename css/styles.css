@@ -1,0 +1,566 @@
+/*
+COLOR CODESSSSS
+
+Purple: #3C0550
+Light grey: #BCB7BB
+Orange: #F9673E
+Basically black lol: #221D23
+Dark grey: #565656
+
+
+FONTSSSSS
+
+//ARVO
+font-family: arvo, serif;
+font-weight: 400;
+font-style: normal;
+
+//AKTIV LIGHT
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+//ACTIV BLACK
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 900;
+font-style: normal;
+
+//ACTIV XBOLD
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+//ACTIV THIN
+font-family: aktiv-grotesk-thin, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+*/
+
+/*test stuff
+hi: font-size:3.5rem;
+
+*/
+
+html,body{
+    margin:0;
+    padding:0;
+}
+
+#purple{
+    background-color:#3C0550;
+    width:60%;
+    height:100vh;
+}
+
+section{
+    height:100vh;
+    width:100%;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    position:fixed; /*CHANGE THIS TO FIXED WHEN DONE*/
+    margin-top:-20px;
+    height:100px;
+    width:60%;
+    display:flex;
+    justify-content:space-between;
+    padding-left:20px;
+    z-index:20;
+    transition: 0.35s all ease;
+}
+
+.logo a{
+    font-family:arvo, serif;
+    color:#F9673E;
+    font-size:2rem;
+    text-decoration:none;
+}
+
+.logo a.animated{
+    animation-duration:0.5s;
+}
+
+.logo{
+    display:flex;
+    transition: 0.35s all ease;
+}
+
+.links a{
+    color:white;
+    text-decoration:none;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size:1.3vw;
+    margin-right:20px;
+}
+
+.links a:hover{
+    color:#F9673E;
+    animation: 0.1s ease-in links;
+}
+
+@keyframes links{
+    0%{
+        color: #ffffff;
+    }
+    100%{
+        color:#F9673E;
+    }
+}
+
+nav .links{
+    display:flex;
+    justify-content:flex-end;
+    flex-direction:row;
+    align-content:center;
+    align-items:center;
+    margin-right:40px;
+    transition: 0.35s all ease;
+}
+
+#circle{
+    width:30vh;
+    height:30vh;
+    background-color:#ffffff;
+    border-radius:75%;
+    margin-top:30vh;
+}
+
+#flex-flex{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+}
+
+#web-image{
+    height:20vh;
+    width:20vh;
+    z-index:1;
+    margin-top:-30vh;
+}
+
+#home-image{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+}
+
+#home{
+    display:flex;
+}
+
+.demo, .demo-name{
+    opacity:0;
+}
+
+.demo span, .demo-name span{
+    /* translate effect */
+    /* fade effect */
+    opacity: 0;
+}
+
+#text p{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align:center;
+}
+
+#text{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   align-content:center;
+   justify-content:center;
+   margin-top:10vh;
+   margin-bottom:10vh;
+}
+
+#text-text{
+    display:flex;
+    align-items:center;
+    align-content:center;
+    justify-content:center;
+    margin:auto;
+}
+
+#hi{
+    color:#BCB7BB;
+    font-size:4.3vw;
+    padding:0;
+    margin:0;
+}
+
+#andrea{
+    font-size:7.5vw;
+    margin-top:-1.5vw;
+    color:#3C0550;
+}
+
+#and{
+    font-size:4.7vw;
+    color:#BCB7BB;
+    margin-top:-9vw;
+}
+
+#make{
+    font-size:11vw;
+    color:#F9673E;
+    margin-top:-7vw;
+}
+
+#cool{
+    font-size:11.5vw;
+    color:#F9673E;
+    margin-top:-15vw;
+}
+
+#stuff{
+    font-size:9.5vw;
+    color:#F9673E;
+    margin-top:-15vw;
+}
+
+
+.scroll{
+    background-color: #3C0550;
+    height:80px;
+    width:100%;
+    transition: 0.35s all ease;
+    box-shadow:0px 6px 10px 1px rgba(0,0,0,0.5);
+}
+
+.scroll .links{
+    margin-top:15px;
+    transition: 0.35s all ease;
+}
+
+.scroll .logo{
+    margin-top:10px;
+    transition: 0.35s all ease;
+}
+
+#about{
+    display:flex;
+}
+
+#grey{
+    background-color:#BCB7BB;
+    width:45%;
+    height:100vh;
+}
+
+#text-about, #text-contact{
+    background-color:#ffffff;
+    width:55%;
+    height:100vh;
+}
+
+#about-image{
+    padding-top:175px;
+}
+
+h1{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:2.5rem;
+    color:#3C0550;
+}
+
+#text-about h1{
+    margin-top:12%;
+}
+
+#text-about p, #text-contact p{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:0.9rem;
+    margin-right:5%;
+    color:#221D23;
+}
+
+#text-about p, #text-about h1, #text-about h2{
+    margin-left:5%;
+}
+
+h2{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:2rem;
+    color:#F9673E;
+}
+
+li{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:0.8rem;
+    margin-left:5%;
+    margin-right:5%;
+    color:#221D23;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li::before{
+    content: "\2022";
+    color:#BCB7BB;
+    display:inline-block;
+    text-align:center;
+    font-weight:bold;
+    font-size:2rem;
+}
+
+.bullet{
+    height:10px;
+    width:10px;
+    background-color:#BCB7BB;
+    border-radius:75%;
+    margin-left:5%;
+    margin-bottom:30px;
+}
+
+.testidk{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    align-content:center;
+}
+
+.list{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight:300;
+    font-style:normal;
+    font-size:0.9rem;
+    color: #221D23;
+    width:85%;
+    margin-left:25px;
+    margin-bottom:30px;
+}
+
+h4.title{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color:#F9673E;
+    font-size:1.2rem;
+    margin-bottom: 0px;
+}
+
+#skillsContent{
+    display:flex;
+}
+
+#text-skills p{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight:300;
+    font-style:normal;
+    font-size:0.9rem;
+    color:#221D23;
+}
+
+#text-skills{
+    width: 90%;
+    height: 15vh;
+    padding-top:10vh;
+    padding-left:2.5%;
+}
+
+#skillsContent{
+    padding-left:2.5%;
+}
+
+#barsLeft, #barsRight{
+    width:50%;
+}
+
+.web-project img.website{
+    width:50vh;
+}
+
+.container img{
+    filter:grayscale(100);
+}
+
+.overlay{
+    z-index:1;
+    margin-top:-29.7vh;
+    opacity:0;
+}
+
+.overlay:hover{
+    opacity:1;
+    transition:.3s ease;
+}
+
+.web-project img.web-links{
+    width:40px;
+}
+
+#flex-cool{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    align-content:center;
+}
+
+.web-project{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    height:58vh;
+    width:46vw;
+    box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.16);
+    background-color:white;
+}
+
+#idk-anymore{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    align-content:center;
+    width:10vw;
+}
+
+.web-project h4{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color:#F9673E;
+    font-size:1.2rem;
+}
+
+.web-project p{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:0.9rem;
+    margin-right:5%;
+    color:#221D23;
+    text-align:center;
+}
+
+#text-cool p{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:0.9rem;
+    margin-right:5%;
+    color:#221D23;
+    padding-left:2.5%;
+}
+
+#credits p{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:0.7rem;
+    margin-right:5%;
+    color:#221D23;
+    padding-left:2.5%;
+}
+
+#text-cool{
+    padding-top:5%;
+}
+
+#credits{
+    margin-top:5%;
+}
+
+#photo-cred p{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:0.7rem;
+    margin-right:5%;
+    color:#221D23;
+}
+
+#photo-cred a{
+    color:white;
+    text-decoration:none;
+    font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#photo-cred a:hover{
+    color:#F9673E;
+    animation: 0.2s ease-in links;
+}
+
+#photo-cred{
+    float:right;
+    width:22vw;
+    margin-top:26vh;
+}
+
+#text-contact h1{
+    margin-top:0%;
+}
+
+#text-contact{
+    padding-top:15vh;
+    height:85vh;
+    padding-left:2.5%;
+}
+
+.orange-header{
+    margin-top:7vh;
+}
+
+
+#text-contact a, .testidk a{
+    color:#221D23;
+
+}
+
+#text-contact i{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size:0.9rem;
+}
+
+#text-contact a:hover, .testidk a:hover{
+    color:#F9673E;
+    animation: 0.2s ease-in social-media;
+}
+
+@keyframes social-media{
+    0%{
+        color: #221D23;
+    }
+    100%{
+        color:#F9673E;
+    }
+}
+
+#photo-contact{
+    background-image:url("../img/coding-computer.jpg");
+    width:45%;
+    height:100vh;
+    background-position:cover;
+    background-repeat:no-repeat;
+    filter:grayscale(100);
+    background-size:cover;
+}
+
+#contact{
+    display:flex;
+}
