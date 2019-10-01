@@ -492,8 +492,7 @@ h4.title{
 }
 
 #photo-cred a{
-    color:white;
-    text-decoration:none;
+    color:#221D23;
     font-family: aktiv-grotesk-thin, sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -501,13 +500,12 @@ h4.title{
 
 #photo-cred a:hover{
     color:#F9673E;
-    animation: 0.2s ease-in links;
+    animation: 0.2s ease-in social-media;
 }
 
 #photo-cred{
-    float:right;
-    width:22vw;
-    margin-top:26vh;
+    width:50vw;
+    margin-top:6vh;
 }
 
 #text-contact h1{

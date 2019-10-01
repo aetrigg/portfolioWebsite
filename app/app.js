@@ -1,8 +1,10 @@
 //animating the web image on home page
-var $svg = $('svg').drawsvg({
-    duration:4000
+$(window).on('load', function(){
+    var $svg = $('svg').drawsvg({
+        duration:4000
+    });
+    $svg.drawsvg('animate');
 });
-$svg.drawsvg('animate');
 
 //animating the text on home page
 $(window).on('load', function(){
